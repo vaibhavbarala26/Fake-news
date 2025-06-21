@@ -5,7 +5,6 @@ import torch
 import numpy as np
 tokenizer = BertTokenizer.from_pretrained(model_name)
 model = BertForSequenceClassification.from_pretrained(model_name)
-print(model.eval())
 def predict_label(text):
     import re  # Ensure re is imported in case it's not already
 
@@ -42,5 +41,3 @@ def predict_label(text):
             "Real": f"{real_pct:.2f}%"
         }
     }
-
-print(predict_label("This is a test news article to check the model's performance."))

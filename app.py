@@ -1,7 +1,7 @@
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 import torch
 import numpy as np
-model_path = "./my_bert_model/final_model"
+model_path = "Vaibhavbarala/Fake-news"
 model = AutoModelForSequenceClassification.from_pretrained(model_path)
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 
